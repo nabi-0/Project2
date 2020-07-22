@@ -1,4 +1,4 @@
-# Project 2
+# Project 2 - Internal Social Media
 
 In this project we will be creating an internal company profile communcation system. The key features of this website include :
 Being able to reserve a conference room in real time and see attendees.
