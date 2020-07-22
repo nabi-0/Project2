@@ -51,6 +51,7 @@ Access the site by typing localhost path in your chrome browser
 
 ## Author
 eguillen2035
+Hitsupod
 
 ## License
 This project is licensed under the terms of the **MIT** license.
