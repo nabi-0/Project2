@@ -59,6 +59,7 @@ Access the site by typing localhost path in your chrome browser
 nabi-0
 Hitsupod
 eguillen2035
+Hitsupod
 
 
 ## License
