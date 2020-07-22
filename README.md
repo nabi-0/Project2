@@ -11,6 +11,12 @@ Bonus feature - Kudos
 [![Javascript](https://img.shields.io/badge/Javascript-JS-blue.svg)](https://www.w3schools.com/Js/)
 [![Node.js](https://img.shields.io/badge/Node.js-Node-green.svg)](https://nodejs.org/en/)
 
+# Roles
+Natalia = Backend -  Handlebars, Javascript, Ajax, Express.
+Reggie = Backend - SQL, Database, Connection.js.
+Eduardo = Frontend - HTML, CSS, PUBLIC FOLDER, Handlebars.
+
+
 
 ## Summary
 
@@ -49,9 +55,12 @@ Access the site by typing localhost path in your chrome browser
  
 
 
-## Author
+## Authors (Github Username)
+nabi-0
+Hitsupod
 eguillen2035
 Hitsupod
+
 
 ## License
 This project is licensed under the terms of the **MIT** license.
