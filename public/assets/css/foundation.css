@@ -29,7 +29,80 @@
 .social.github:focus {
 	background-color: black;
 	color: #fefefe; */
+
+$hero-height: 60vh;
+
+.hero-section {
+	background: url('https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg') 50% no-repeat;
+	background-size: cover;
+	height: $hero-height;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.hero-section-text {
+		color: $white;
+		text-shadow: 1px 1px 2px $black;
+	}
 }
+
+.table-expand {
+	margin-top: 5rem;
+
+	td {
+		color: $dark-gray;
+	}
+
+	tr {
+		border: 1px solid $light-gray;
+	}
+
+	.text-right {
+		padding-right: 3rem;
+	}
+}
+
+.table-expand-row {
+	&.is-active {
+		.expand-icon::after {
+			content: '-';
+		}
+	}
+
+	.expand-icon::after {
+		content: '+';
+		float: right;
+	}
+}
+
+// this is where the magic happens
+.table-expand-row-content {
+	display: none;
+}
+
+.table-expand-row-content {
+	&.is-active {
+		display: table-row;
+		animation: fadeIn ease-in 1;
+		animation-fill-mode: both;
+		animation-duration: 0.5s;
+	}
+}
+
+.table-expand-row-nested {
+	background-color: $light-gray;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 @charset "UTF-8";
 
 .rounded-social-buttons {
@@ -456,6 +529,11 @@
 .full-width-testimonial {
 	background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)),
 		url("https://www.censofinc.com/wp-content/uploads/2018/06/small-business-process-management.jpg");
+	background-position: center center;
+}
+.full-width-testimonial2 {
+	background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)),
+		url("https://wallpapercave.com/wp/wp2298453.jpg");
 	background-position: center center;
 }
 
