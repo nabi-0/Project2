@@ -1,7 +1,7 @@
 {
   "name": "project2",
   "version": "1.0.0",
-  "description": "In this project we will be creating an internal company profile communcation system. The key features of this website include : Being able to reserve a conference room in real time and see attendees. Post public posts for the whole company to see. (\"ie Team updates, birthdays\") Employee Reviews , Employee skillset finder",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/nabi-0/Project2/issues"
   },
-  "homepage": "https://github.com/nabi-0/Project2#readme"
+  "homepage": "https://github.com/nabi-0/Project2#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mysql2": "^2.1.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.3.3"
+  }
 }
