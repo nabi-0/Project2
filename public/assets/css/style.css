@@ -1,19 +1,22 @@
 #top-bar {
   background-color: blue;
 }
-
+p {
+  text-align: center;
+}
 
 .row2 {
   display: flex;
   align-items: center;
-  justify-content: center }
+  justify-content: center;
+}
 div.container6 p {
-  margin: 0 }
-
+  margin: 0;
+}
 
 .subnav-hero-section {
   text-align: center;
-  opacity:0.85;
+  opacity: 0.85;
   background: #000000;
   background-size: cover;
   position: relative;
@@ -22,11 +25,11 @@ div.container6 p {
   display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 300px;
 }
 
@@ -67,8 +70,6 @@ div.container6 p {
   background: rgba(254, 254, 254, 0.15);
 }
 
-
-
 .translucent-form-overlay {
   max-width: 600px;
   width: 100%;
@@ -82,11 +83,13 @@ div.container6 p {
   display: block;
 }
 
-.translucent-form-overlay h3, .translucent-form-overlay label {
+.translucent-form-overlay h3,
+.translucent-form-overlay label {
   color: #fefefe;
 }
 
-.translucent-form-overlay input, .translucent-form-overlay select {
+.translucent-form-overlay input,
+.translucent-form-overlay select {
   color: #8a8a8a;
 }
 
@@ -101,10 +104,6 @@ div.container6 p {
 .translucent-form-overlay input::placeholder {
   color: #8a8a8a;
 }
-
-
-
-
 
 .sign-in-form {
   padding: 1rem 1.5em;
@@ -172,7 +171,6 @@ div.container6 p {
   margin-right: auto;
 }
 
-
 img {
   display: block;
   width: 55%;
@@ -181,9 +179,9 @@ img {
   margin-right: auto;
 }
 
-
 .hero-section {
-  background: url("https://i.pinimg.com/originals/48/62/d5/4862d581fe5e513648fd2421ff6320a2.jpg") 50% no-repeat;
+  background: url("https://i.pinimg.com/originals/48/62/d5/4862d581fe5e513648fd2421ff6320a2.jpg")
+    50% no-repeat;
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
   height: 60vh;
@@ -192,15 +190,13 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .hero-section .hero-section-text {
-  color:white;
+  color: white;
 }
-
-
