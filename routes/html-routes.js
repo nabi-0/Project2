@@ -9,6 +9,7 @@ module.exports = function (app) {
     // If the user already has an account send them to the members page
     if (req.user) {
       res.redirect("/reservations");
+      console.log("I am not passing this point");
     }
     res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
@@ -24,6 +25,6 @@ module.exports = function (app) {
   // Here we've add our isAuthenticated middleware to this route.
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
   app.get("/reservations", isAuthenticated, function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/reservations.html"));
+    res.sendFile(path.join(__dirname, "../public/members.html"));
   });
 };

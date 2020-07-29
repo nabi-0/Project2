@@ -1,37 +1,45 @@
-<!doctype html>
-<lang="en">
-    </lang>
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sing Up Form</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sing Up Form</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+</head>
 
-    <body>
-        <div class="sign-in-form">
-            <div class="logo">
-                <img src="../public/assets/img/cricketsicon.png" alt="Logo" >
-            </div>
-
-            <div class="input">
-                <h4 class="text-center" id="sign-in-text">Sign Up With Email</h4>
-                <label for="sign-in-form-username">Username</label>
-                <input type="text" class="sign-in-form-username" id="sign-in-form-username">
-                <label for="sign-in-form-password">Password</label>
-                <input type="password" class="sign-in-form-password" id="sign-in-form-password">
-                <button type="submit" class="sign-in-form-button">Sign up</button>
-            </div>
-            <p>Or log in <a href="/login">here</a></p>
-
-            <div class="footer">
-
-            </div>
+<body>
+    <div class="sign-in-form">
+        <div class="logo">
+            <img src="/assets/img/cricketsicon.png" alt="Logo">
         </div>
-        </form>
-    </body>
 
-    </html>
-    <!-- teeesting this agaiiin  -->
+        <div class="input">
+            <h4>Sign Up With Email</h4>
+            <form class="signup">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Username</label>
+                    <input type="email" class="form-control" id="email-input" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="password-input" placeholder="Password">
+                </div>
+                <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span> <span class="msg"></span>
+                </div>
+                <button type="submit" class="sign-in-form-button">Sign up</button>
+            </form>
+            <br />
+            <p>Or log in <a href="/login">here</a></p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
+
+</body>
+
+</html>
