@@ -44,10 +44,6 @@ div.container6 p {
 	height: 300px;
 }
 
-
-
-
-
 .subnav-hero-section .subnav-hero-headline {
 	color: #fefefe;
 }
@@ -118,6 +114,23 @@ div.container6 p {
 
 .translucent-form-overlay input::placeholder {
 	color: #8a8a8a;
+}
+
+.translucent-form-overlay2 input,
+.translucent-form-overlay2 select {
+	color: white;
+}
+
+.translucent-form-overlay2 input::-webkit-input-placeholder {
+	color: black;
+}
+
+.translucent-form-overlay2 input:-ms-input-placeholder {
+	color: black;
+}
+
+.translucent-form-overlay2 input::placeholder {
+	color: black;
 }
 
 .sign-in-form {
