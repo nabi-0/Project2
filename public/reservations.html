@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <!-- Foundation style asset for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -47,138 +47,103 @@
         </div>
     </div>
     <h1>Reserve a Conference Room</h1>
+<!-- Cards -->
 
-    <h3>Conference Room 1</h3>
-    <table class="table-expand">
-        <thead>
-            <tr class="table-expand-row">
-                <th width="200">Date</th>
-                <th>Room Location</th>
-                <th class="text-right" width="150">Amount</th>
-                <th width="150">Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="table-expand-row" data-open-details>
-                <td>August 15</td>
-                <td>2 items</td>
-                <td class="text-right">$0.50</td>
-                <td>in progress <span class="expand-icon"></span></td>
-            </tr>
-
-            <tr class="table-expand-row-content">
-                <td colspan="8" class="table-expand-row-nested">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque unde quaerat reprehenderit
-                        ipsa
-                        ipsam, adipisci facere repellendus impedit at, quisquam dicta optio veniam quia nesciunt,
-                        inventore
-                        quod in neque magni?</p>
-                </td>
-            </tr>
-
-            <tr class="table-expand-row" data-open-details>
-                <td>July 15</td>
-                <td>4 items</td>
-                <td class="text-right">$1.30</td>
-                <td>scheduled <span class="expand-icon"></span></td>
-            </tr>
-
-        </tbody>
-    </table>
-
-    <h3>Conference Room 2</h3>
-    <table class="table-expand">
-        <thead>
-            <tr class="table-expand-row">
-                <th width="200">Date</th>
-                <th>Room Location</th>
-                <th class="text-right" width="150">Amount</th>
-                <th width="150">Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="table-expand-row" data-open-details>
-                <td>August 15</td>
-                <td>2 items</td>
-                <td class="text-right">$0.50</td>
-                <td>in progress <span class="expand-icon"></span></td>
-            </tr>
-
-            <tr class="table-expand-row-content">
-                <td colspan="8" class="table-expand-row-nested">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque unde quaerat reprehenderit
-                        ipsa
-                        ipsam, adipisci facere repellendus impedit at, quisquam dicta optio veniam quia nesciunt,
-                        inventore
-                        quod in neque magni?</p>
-                </td>
-            </tr>
-
-            <tr class="table-expand-row" data-open-details>
-                <td>July 15</td>
-                <td>4 items</td>
-                <td class="text-right">$1.30</td>
-                <td>scheduled <span class="expand-icon"></span></td>
-            </tr>
-
-        </tbody>
-    </table>
-
-    <h3>Conference Room 3</h3>
-    <table class="table-expand">
-        <thead>
-            <tr class="table-expand-row">
-                <th width="200">Date</th>
-                <th>Room Location</th>
-                <th class="text-right" width="150">Amount</th>
-                <th width="150">Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="table-expand-row" data-open-details>
-                <td>August 15</td>
-                <td>2 items</td>
-                <td class="text-right">$0.50</td>
-                <td>in progress <span class="expand-icon"></span></td>
-            </tr>
-
-            <tr class="table-expand-row-content">
-                <td colspan="8" class="table-expand-row-nested">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque unde quaerat reprehenderit
-                        ipsa
-                        ipsam, adipisci facere repellendus impedit at, quisquam dicta optio veniam quia nesciunt,
-                        inventore
-                        quod in neque magni?</p>
-                </td>
-            </tr>
-
-            <tr class="table-expand-row" data-open-details>
-                <td>July 15</td>
-                <td>4 items</td>
-                <td class="text-right">$1.30</td>
-                <td>scheduled <span class="expand-icon"></span></td>
-            </tr>
-
-        </tbody>
-    </table>
-
-
-
-
-
-    <div class="row column">
-        <ul class="pagination" role="navigation" aria-label="Pagination">
-            <li class="disabled">Previous</li>
-            <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-            <li><a href="#" aria-label="Page 2">2</a></li>
-            <li><a href="#" aria-label="Page 3">3</a></li>
-            <li><a href="#" aria-label="Page 4">4</a></li>
-            <li class="ellipsis"></li>
-            <li><a href="#" aria-label="Page 12">12</a></li>
-            <li><a href="#" aria-label="Page 13">13</a></li>
-            <li><a href="#" aria-label="Next page">Next</a></li>
-        </ul>
+<div class="top-card-row row">
+    <!-- Top Row -->
+    <div class="card col-sm-6 " style="width:400px">
+        <img class="card-img-top" src="../public/assets/img/fwc.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">FWC Conference Room </h4>
+          <form action="/action_page.php">
+            <label for="cars">Choose an Available Slot Time:</label>
+            <select name="cars" id="startTime">
+                <option value="8-9">8AM-9AM</option>
+                <option value="9-10">9AM-10AM</option>
+                <option value="10-11">10AM-11AM</option>
+                <option value="11-12">11AM-12PM</option>
+                <option value="12-1">12PM-1PM</option>
+                <option value="1-2">1PM-2PM</option>
+                <option value="2-3">2PM-3PM</option>
+                <option value="3-4">3PM-4PM</option>
+                <option value="4-5">4PM-5PM</option>
+            </select>
+            <input type="submit" value="Submit" class="btn btn-primary">
+          </form>
+        </div>
     </div>
+
+    <div class="card col-sm-6" style="width:400px">
+        <img class="card-img-top" src="../public/assets/img/DeadOrbit.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Dead Orbit Conference Room</h4>
+          <form action="/action_page.php">
+            <label for="cars">Choose an Available Slot Time:</label>
+            <select name="cars" id="startTime">
+                <option value="8-9">8AM-9AM</option>
+                <option value="9-10">9AM-10AM</option>
+                <option value="10-11">10AM-11AM</option>
+                <option value="11-12">11AM-12PM</option>
+                <option value="12-1">12PM-1PM</option>
+                <option value="1-2">1PM-2PM</option>
+                <option value="2-3">2PM-3PM</option>
+                <option value="3-4">3PM-4PM</option>
+                <option value="4-5">4PM-5PM</option>
+            </select>
+            <input type="submit" value="Submit" class="btn btn-primary">
+          </form>
+        </div>
+    </div>
+</div>
+
+<!-- Bottom Row -->
+<div class="top-card-row row">
+<!-- Bottom Row -->
+<div class="card col-sm-6 " style="width:400px">
+    <img class="card-img-top" src="../public/assets/img/NewMonarchy.jpg" alt="Card image">
+    <div class="card-body">
+      <h4 class="card-title">New Monarchy Conference Room </h4>
+      <form action="/action_page.php">
+        <label for="cars">Choose an Available Slot Time:</label>
+        <select name="cars" id="startTime">
+            <option value="8-9">8AM-9AM</option>
+            <option value="9-10">9AM-10AM</option>
+            <option value="10-11">10AM-11AM</option>
+            <option value="11-12">11AM-12PM</option>
+            <option value="12-1">12PM-1PM</option>
+            <option value="1-2">1PM-2PM</option>
+            <option value="2-3">2PM-3PM</option>
+            <option value="3-4">3PM-4PM</option>
+            <option value="4-5">4PM-5PM</option>
+        </select>
+        <input type="submit" value="Submit" class="btn btn-primary">
+      </form>
+    </div>
+</div>
+
+<div class="card col-sm-6" style="width:400px">
+    <img class="card-img-top" src="../public/assets/img/thenine.jpg" alt="Card image">
+    <div class="card-body">
+      <h4 class="card-title">The Nine Conference Room</h4>
+      <form action="/action_page.php">
+        <label for="cars">Choose an Available Slot Time:</label>
+        <select name="cars" id="startTime">
+            <option value="8-9">8AM-9AM</option>
+            <option value="9-10">9AM-10AM</option>
+            <option value="10-11">10AM-11AM</option>
+            <option value="11-12">11AM-12PM</option>
+            <option value="12-1">12PM-1PM</option>
+            <option value="1-2">1PM-2PM</option>
+            <option value="2-3">2PM-3PM</option>
+            <option value="3-4">3PM-4PM</option>
+            <option value="4-5">4PM-5PM</option>
+        </select>
+        <input type="submit" value="Submit" class="btn btn-primary">
+      </form>
+    </div>
+</div>
+</div>
+   
 
     <!-- FOOTER --------------- -->
     <footer class="responsive-blog-footer">
