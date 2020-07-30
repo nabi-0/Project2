@@ -1,14 +1,15 @@
 <!doctype html>
-<lang="en">
-    </lang>
+<html lang="en">
 
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sing Up Form</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sing Up Page!</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+</head>
+
+<body>
     <div class="view"
         style="background-image: url('http://www.oneequalworld.com/wp-content/uploads/2013/03/shutterstock_94478944-1-copy.jpg'); background-repeat: no-repeat; background-size: cover; background-position:center;">
         <header class="subnav-hero-section">
@@ -26,39 +27,37 @@
         <br>
 
         <div class="row2">
-
             <div class="col-lg-12">
                 <div class="translucent-form-overlay" style="display:flex;justify-content:center;align-items:center;">
-                    <form>
+                    <form class="signup">
                         <div class="logo">
-                            <img src="/public/assets/img/cricketsicon.png" alt="Logo">
+                            <img src="/assets/img/cricketsicon.png" alt="Logo">
                         </div>
                         <h3>Sign Up With Email</h3>
                         <div class="row columns">
-                            <label>Username
-                                <input type="text" id="sign-in-form-username" name="username" placeholder="email">
-                            </label>
+                            <label for="exampleInputEmail1">Username</label>
+                            <input type="email" id="email-input" name="username" placeholder="Email">
                         </div>
                         <div class="row columns">
-                            <label>Password
-                                <input type="password" id="sign-in-form-password" placeholder="password">
-                            </label>
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" id="password-input" placeholder="Password">
                         </div>
-                        <button class="button-hover-like button" class="primary button expanded search-button">
-                            <span>Sign up</span><i class="fa fa-heart"></i></button>
-
+                        <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                            <span class="sr-only">Error:</span> <span class="msg"></span>
+                        </div>
                         <button type="submit" id="sign-in-form-button" class="primary button expanded search-button">
-                            SIGN UP
+                            Sign Up
                         </button>
                         <!-- <button type="button" class="primary button expanded search-button">
-                                New User ? Sign up here
-                            </button> -->
-                        <p>Or Log in <a href="login.html">here</a></p>
+                            New User ? Sign up here
+                        </button> -->
+                        <p>New? Log in <a href="login.html">here</a></p>
+                    </form>
 
                 </div>
             </div>
         </div>
-        </form>
 
         <br>
         <br>
@@ -76,6 +75,11 @@
         <br>
         <br>
         <br>
-        </body>
 
-        </html>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
+</body>
+
+</html>
