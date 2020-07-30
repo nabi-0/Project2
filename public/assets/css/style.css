@@ -227,3 +227,9 @@ img {
 .hero-section .hero-section-text {
 	color: white;
 }
+
+.card {
+	padding: 10px;
+	border: #000000 2px;
+	box-shadow: #3d454f 5px;
+}
