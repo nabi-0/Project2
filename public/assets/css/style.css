@@ -1,17 +1,154 @@
 #top-bar {
 	background-color: blue;
 }
+p {
+	text-align: center;
+}
+
+.row2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.row3 {
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sign-in-form-username {
+	color: white;
+}
+
+div.container6 p {
+	margin: 0;
+}
+
+.subnav-hero-section {
+	text-align: center;
+	opacity: 0.85;
+	background: #000000;
+	background-size: cover;
+	position: relative;
+	overflow: visible;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	height: 300px;
+}
+
+.subnav-hero-section .subnav-hero-headline {
+	color: #fefefe;
+}
+
+.subnav-hero-subnav {
+	float: none;
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	bottom: 0;
+	width: 100%;
+}
+
+.subnav-hero-subnav li {
+	float: none;
+	display: inline-block;
+}
+
+.subnav-hero-subnav li a {
+	padding: 0.9rem 1rem;
+	font-size: 0.75rem;
+	color: #fefefe;
+	text-transform: uppercase;
+	display: block;
+	font-weight: bold;
+	letter-spacing: 1px;
+	transition: all 0.35s ease-in-out;
+}
+
+.subnav-hero-subnav li a.is-active {
+	background: rgba(254, 254, 254, 0.15);
+}
+
+.subnav-hero-subnav li a:hover {
+	background: rgba(254, 254, 254, 0.15);
+}
+
+.translucent-form-overlay {
+	max-width: 600px;
+	width: 100%;
+	background-color: rgba(54, 54, 54, 0.8);
+	padding: 20px;
+	color: #fefefe;
+	position: center;
+}
+
+.translucent-form-overlay .columns.row {
+	display: block;
+}
+
+.translucent-form-overlay h3,
+.translucent-form-overlay label {
+	color: #fefefe;
+}
+
+.translucent-form-overlay input,
+.translucent-form-overlay select {
+	color: #8a8a8a;
+}
+
+.translucent-form-overlay input::-webkit-input-placeholder {
+	color: #8a8a8a;
+}
+
+.translucent-form-overlay input:-ms-input-placeholder {
+	color: #8a8a8a;
+}
+
+.translucent-form-overlay input::placeholder {
+	color: #8a8a8a;
+}
+
+.translucent-form-overlay2 input,
+.translucent-form-overlay2 select {
+	color: white;
+}
+
+.translucent-form-overlay2 input::-webkit-input-placeholder {
+	color: black;
+}
+
+.translucent-form-overlay2 input:-ms-input-placeholder {
+	color: black;
+}
+
+.translucent-form-overlay2 input::placeholder {
+	color: black;
+}
 
 .sign-in-form {
 	padding: 1rem 1.5em;
-	border-radius: .5rem;
+	border-radius: 0.5rem;
 	background-color: #3d454f;
+	width: 390px;
+	text-align: center;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .sign-in-form h4 {
 	color: white;
 	margin-bottom: 1rem;
-	font-weight: 600;
+	font-weight: 400;
+	font-size: 22px;
 	text-transform: uppercase;
 }
 
@@ -19,24 +156,24 @@
 	text-transform: uppercase;
 	color: #adadad;
 	letter-spacing: 1px;
-	font-weight: 600;
+	font-weight: 400;
 	margin-bottom: 1rem;
 }
 
 .sign-in-form input {
-	color: white;
+	color: black;
 }
 
 .sign-in-form input:focus {
-	opacity: .8;
+	opacity: 0.8;
 }
 
 .sign-in-form-username,
 .sign-in-form-password {
 	border-radius: 30px;
 	border: none;
-	opacity: .1;
-	transition: all ease .4s;
+	opacity: 0.1;
+	transition: all ease 0.4s;
 }
 
 .sign-in-form-button {
@@ -48,7 +185,7 @@
 	letter-spacing: 1px;
 	width: 100%;
 	padding: 1rem;
-	transition: all ease .4s;
+	transition: all ease 0.4s;
 }
 
 .sign-in-form-button:hover {
@@ -56,26 +193,37 @@
 	border-color: #44c8ed;
 }
 
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img {
+	display: block;
+	width: 55%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .hero-section {
-  background: url("https://i.pinimg.com/originals/48/62/d5/4862d581fe5e513648fd2421ff6320a2.jpg") 50% no-repeat;
-  background-size: cover;
-  font-family: Arial, Helvetica, sans-serif;
-  height: 60vh;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+	background: url("https://i.pinimg.com/originals/48/62/d5/4862d581fe5e513648fd2421ff6320a2.jpg") 50% no-repeat;
+	background-size: cover;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 60vh;
+	text-align: center;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 .hero-section .hero-section-text {
-  color:white;
+	color: white;
 }
-
-
