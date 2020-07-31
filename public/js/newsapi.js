@@ -3,34 +3,31 @@
 const spaceNewsID = document.querySelector("news-id");
 const spaceNewstitle = document.querySelector("news-title");
 
-
 // searchForm.addEventListener("submit", displayNews);
 window.onload = function displayNews() {
-    
-    // var news = $(this).attr("data-name")
-    var settings = {
-        async: true,
-        crossDomain: true,
-        url: "https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty",
-        method: "GET",
-        headers: {
-            "x-rapidapi-host": "community-hacker-news-v1.p.rapidapi.com",
-            "x-rapidapi-key": "27b0ec5785msh5ec0720216625eap1328e7jsn46070a22c870"
-        }
-    }
+  // var news = $(this).attr("data-name")
+  var settings = {
+    async: true,
+    crossDomain: true,
+    url: "https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty",
+    method: "GET",
+    headers: {
+      "x-rapidapi-host": "community-hacker-news-v1.p.rapidapi.com",
+      "x-rapidapi-key": "27b0ec5785msh5ec0720216625eap1328e7jsn46070a22c870",
+    },
+  };
 
-    $.ajax(settings).done(function (response) {
-        // return response.json();
-        console.log(response);
-        print(response);
-        id = response.id;
-        title = response.title;
-        url = response.url;
-        spaceNewsID.append(id);
-    });
+  $.ajax(settings).done(function (response) {
+    return response.json();
+    console.log(response);
+    id = response.id;
+    title = response.title;
+    url = response.url;
+    spaceNews.append(id);
+  });
 };
 
-   /*{
+/*{
         // Creating an AJAX call for the specific movie button being clicked
     $.ajax({
       url: queryURL,

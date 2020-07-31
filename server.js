@@ -4,6 +4,7 @@ var session = require("express-session");
 var exphbs = require("express-handlebars");
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
+// var bodyParser = require("body-parser");
 // console.log({ passport });
 
 // Setting up port and requiring models for syncing
@@ -19,6 +20,8 @@ app.set("view engine", "handlebars");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
+// app.use(bodyParser.json());
+// console.log("after body-parse");
 // We need to use sessions to keep track of our user's login status
 app.use(
   session({ secret: "keyboard cat", resave: true, saveUninitialized: true })

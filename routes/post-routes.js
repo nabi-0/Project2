@@ -13,6 +13,7 @@ module.exports = function (app) {
 
   app.post("/post", function (req, res) {
     console.log("handling post request for url /post");
+    console.log("request.body.post=", req.body.post);
     db.Post.create({
       username: req.body.username,
       title: req.body.title,
