@@ -1,7 +1,9 @@
 $(function () {
-  $(".post-form").on("submit", function (event) {
+  $("#sub-btn").on("click", function (event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
+    event.stopPropagation();
+    console.log("post val= ", $("#post").val().trim());
 
     var newPost = {
       username: $("#username").val().trim(),
@@ -21,8 +23,8 @@ $(function () {
     //console.log("Do I work?");
 
     // Send the POST request.
-    $.ajax("/post", {
-      type: "POST",
+    $.post("/post", {
+      // method: "POST",
       data: newPost,
     }).then(function () {
       console.log("created new post");
