@@ -39,8 +39,8 @@
 </div>
 
 <br>
-<div class="row" id="content">
-    <div class="medium-8 columns">
+<div class="row" style="max-width:100%;" id="content">
+    <div class="medium-6 columns medium-offset-3">
         <!-- <div class="newsletter-subscribe-inner">
             <p class="subheader">Share company news</p>
 
@@ -56,11 +56,10 @@
             <div class="medium-12 columns">
                 <div class="blog-post">
                     <!-- START OF FORM REQUIRED FOR BOTH APIS============================= -->
-                    <form id="shareForm">
-                        <h3> Share an update</h3>
-                        <p>To share an update please provide your name, username and limit text to 180
-                            characters.
-                        </p>
+                    <h3> Share an update</h3>
+                    <p>To share an update please provide your name, username and limit text to 180
+                        characters.
+                    </p>
                 </div>
                 <div class="row">
 
@@ -92,25 +91,7 @@
         </div>
 
     </div>
-    <div class="medium-3 columns" data-sticky-container>
-        <div class="sticky" data-sticky data-anchor="content">
-            <h4>Categories</h4>
-            <ul>
-                <li><a href="#">Skyler</a></li>
-                <li><a href="#">Jesse</a></li>
-                <li><a href="#">Mike</a></li>
-                <li><a href="#">Holly</a></li>
-            </ul>
 
-            <h4>Authors</h4>
-            <ul>
-                <li><a href="#">Skyler</a></li>
-                <li><a href="#">Jesse</a></li>
-                <li><a href="#">Mike</a></li>
-                <li><a href="#">Holly</a></li>
-            </ul>
-        </div>
-    </div>
 </div>
 
 {{#each userpost}}
@@ -121,3 +102,59 @@
 <div class=“callout”>
 </div>
 </div>
+
+<div class="blog-post">
+    <h3>Awesome blog post title <small>3/6/2015</small></h3>
+    <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo
+        dignissim congue.
+        Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper
+        orci.
+        Quisque eget
+        odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.
+        Nulla at
+        nulla justo,
+        eget luctus.</p>
+    <div class="callout">
+    </div>
+</div>
+
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 footer-about wow fadeInUp">
+                    <img class="logo-footer" src="/assets/img/cricketsicon.png" alt="logo-footer">
+                    <p>
+                        The purpose of Crickets is to provide private internal
+                        communication for companies and organizations. The app features the ablility
+                        to share updates for all registered users on the homepage and reserve conference rooms.
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-4 offset-lg-1 footer-contact wow fadeInDown">
+                </div>
+                <div class="col-md-4 col-lg-3 footer-social wow fadeInUp">
+                    <h3>Follow Us On Github</h3>
+                    <a href="https://github.com/nabi-0" class="button social github">
+                        <i class="fa fa-github" aria-hidden="true"></i> Natalia
+                    </a>
+                    <a href="https://github.com/Hitsupod" class="button social github">
+                        <i class="fa fa-github" aria-hidden="true"></i> Reggie
+                    </a>
+                    <a href="https://github.com/eguillen2305" class="button social github">
+                        <i class="fa fa-github" aria-hidden="true"></i> Eduardo
+                    </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer-copyright">
+                    <p>Crickets All Rights Reserved 2020® </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
