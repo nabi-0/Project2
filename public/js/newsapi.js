@@ -22,6 +22,7 @@ window.onload = function displayNews() {
     $.ajax(settings).done(function (response) {
         // return response.json();
         console.log(response);
+        print(response);
         id = response.id;
         title = response.title;
         url = response.url;
