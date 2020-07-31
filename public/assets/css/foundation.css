@@ -329,6 +329,11 @@ $hero-height: 60vh;
 	}
 }
 
+.blog-post{
+	padding-left: 10px;
+	padding-right: 100px;
+}
+
 .responsive-blog-footer {
 	background: #4a4a4a;
 	padding: 3rem 3rem;
