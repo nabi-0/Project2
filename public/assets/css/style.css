@@ -5,6 +5,15 @@ p {
 	text-align: center;
 }
 
+.header{
+	text-align: center;
+}
+
+.top-card-row{
+	justify-content: space-around;
+	max-width: 100%;
+}
+
 .row2 {
 	display: flex;
 	align-items: center;
