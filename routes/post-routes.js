@@ -6,17 +6,20 @@ module.exports = function (app) {
     console.log("handling get request for url /post");
     // findAll returns all entries for a table when used with no options
     db.Post.findAll({}).then(function (dbPost) {
-      console.log({ dbPost });
-      res.render("post", { userpost: dbPost });
+      // console.log({ dbPost });
+      var userPostArray = [];
+      if (dbPost.length > 0) {
+        console.log(dbPost[0]);
+      }
+      for (var i = 0; i < dbPost.length; i++) {
+        userPostArray[i] = dbPost[i].dataValues;
+      }
+      res.render("post", { userpost: userPostArray });
     });
   });
 
   app.post("/post", function (req, res) {
     console.log("handling post request for url /post");
-    console.log(req.body);
-    console.log("request.body.data.username=", req.body.data.username);
-    console.log("request.body.data.title=", req.body.data.title);
-    console.log("request.body.data.post=", req.body.data.post);
     db.Post.create({
       username: req.body.data.username,
       title: req.body.data.title,
