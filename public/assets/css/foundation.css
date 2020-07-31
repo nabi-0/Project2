@@ -16,14 +16,15 @@
 	}
 }
 
+.social.github {
+  background-color: #000000;
+  color: #fefefe;
+}
 /* .social {
 	margin-right: .25rem;
 }
 
-.social.github {
-	background-color: #000000;
-	color: #fefefe;
-}
+
 
 .social.github:hover,
 .social.github:focus {
@@ -7685,10 +7686,11 @@ html.is-reveal-open body {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	background: blue;
 }
 .top-bar,
 .top-bar ul {
-	background-color: #e6e6e6;
+	background-color: lightgray;
 }
 .top-bar input {
 	max-width: 200px;
