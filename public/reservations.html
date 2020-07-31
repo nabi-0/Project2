@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Member | Welcome</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    <!-- {{!-- Source to style.css --}} -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
     <!-- Foundation stylesheet added -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
     <!-- {{!-- local source to foundation.css --}} -->
@@ -17,7 +16,11 @@
     <!-- Foundation style asset for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- {{!-- Source to style.css --}} -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
+<!--START OF BODY ==================================================== -->
 
 <body>
 
@@ -37,134 +40,137 @@
             </ul>
         </div>
     </div>
-    <!-- End Top Bar -->
+    <!-- End Top Navbar ================================= -->
     <div class="hero-section">
         <div class="hero-section-text">
-            <!-- <h1>Reserve A Conference Room</h1> -->
-
         </div>
     </div>
-    <h1>Reserve a Conference Room</h1>
-    <!-- Cards -->
+    <br>
+    <br>
+    <!-- RESERVE A CONFERENCE ROOM ================= -->
+    <div class="col-md-12">
+        <h1>Reserve a Conference Room</h1>
+    </div>
+    <!-- TOP CARD ROW - FIRST TWO CONFERENCE ROOMS ============================== -->
+    <div class="col-lg-12">
+        <div class="top-card-row row">
 
-    <div class="top-card-row row">
-        <!-- Top Row -->
-        <div class="card col-sm-6 " style="width:400px">
-            <img class="card-img-top" src="/assets/img/fwc.jpg" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title">FWC Conference Room </h4>
-                <form action="/action_page.php">
-                    <p>Username</p>
-                    <input type="text" id="Username" name="Username">
-                    <p>Description</p>
-                    <input type="text" id="description" name="Description">
-                    <label for="cars">Choose an Available Slot Time:</label>
-                    <select name="cars" id="startTime">
-                        <option value="8-9">8AM-9AM</option>
-                        <option value="9-10">9AM-10AM</option>
-                        <option value="10-11">10AM-11AM</option>
-                        <option value="11-12">11AM-12PM</option>
-                        <option value="12-1">12PM-1PM</option>
-                        <option value="1-2">1PM-2PM</option>
-                        <option value="2-3">2PM-3PM</option>
-                        <option value="3-4">3PM-4PM</option>
-                        <option value="4-5">4PM-5PM</option>
-                    </select>
-                    <br></br>
-                    <input type="submit" value="Submit" class="btn btn-primary">
-                </form>
+            <!-- Top Row ------------------------------------------->
+            <div class="card col-lg-6 " style="width:400px">
+                <img class="card-img-top" src="/assets/img/fwc.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">FWC Conference Room </h4>
+                    <form action="/action_page.php">
+                        <p>Username</p>
+                        <input type="text" id="Username" name="Username">
+                        <p>Description</p>
+                        <input type="text" id="description" name="Description">
+                        <label for="cars">Choose an Available Slot Time:</label>
+                        <select name="cars" id="startTime">
+                            <option value="8-9">8AM-9AM</option>
+                            <option value="9-10">9AM-10AM</option>
+                            <option value="10-11">10AM-11AM</option>
+                            <option value="11-12">11AM-12PM</option>
+                            <option value="12-1">12PM-1PM</option>
+                            <option value="1-2">1PM-2PM</option>
+                            <option value="2-3">2PM-3PM</option>
+                            <option value="3-4">3PM-4PM</option>
+                            <option value="4-5">4PM-5PM</option>
+                        </select>
+                        <br></br>
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                    </form>
+                </div>
+            </div>
+            <div class="card col-sm-6" style="width:400px">
+                <img class="card-img-top" src="/assets/img/DeadOrbit.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Dead Orbit Conference Room</h4>
+                    <form action="/action_page.php">
+                        <p>Username</p>
+                        <input type="text" id="Username" name="Username">
+                        <p>Description</p>
+                        <input type="text" id="description" name="Description">
+                        <label for="cars">Choose an Available Slot Time:</label>
+                        <select name="cars" id="startTime">
+                            <option value="8-9">8AM-9AM</option>
+                            <option value="9-10">9AM-10AM</option>
+                            <option value="10-11">10AM-11AM</option>
+                            <option value="11-12">11AM-12PM</option>
+                            <option value="12-1">12PM-1PM</option>
+                            <option value="1-2">1PM-2PM</option>
+                            <option value="2-3">2PM-3PM</option>
+                            <option value="3-4">3PM-4PM</option>
+                            <option value="4-5">4PM-5PM</option>
+                        </select>
+                        <br></br>
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                    </form>
+                </div>
             </div>
         </div>
 
-        <div class="card col-sm-6" style="width:400px">
-            <img class="card-img-top" src="/assets/img/DeadOrbit.jpg" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title">Dead Orbit Conference Room</h4>
-                <form action="/action_page.php">
-                    <p>Username</p>
-                    <input type="text" id="Username" name="Username">
-                    <p>Description</p>
-                    <input type="text" id="description" name="Description">
-                    <label for="cars">Choose an Available Slot Time:</label>
-                    <select name="cars" id="startTime">
-                        <option value="8-9">8AM-9AM</option>
-                        <option value="9-10">9AM-10AM</option>
-                        <option value="10-11">10AM-11AM</option>
-                        <option value="11-12">11AM-12PM</option>
-                        <option value="12-1">12PM-1PM</option>
-                        <option value="1-2">1PM-2PM</option>
-                        <option value="2-3">2PM-3PM</option>
-                        <option value="3-4">3PM-4PM</option>
-                        <option value="4-5">4PM-5PM</option>
-                    </select>
-                    <br></br>
-                    <input type="submit" value="Submit" class="btn btn-primary">
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Bottom Row -->
-    <div class="top-card-row row">
         <!-- Bottom Row -->
-        <div class="card col-sm-6 " style="width:400px">
-            <img class="card-img-top" src="/assets/img/NewMonarchy.jpg" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title">New Monarchy Conference Room </h4>
-                <form action="/action_page.php">
-                    <p>Username</p>
-                    <input type="text" id="Username" name="Username">
-                    <p>Description</p>
-                    <input type="text" id="description" name="Description">
-                    <label for="cars">Choose an Available Slot Time:</label>
-                    <select name="cars" id="startTime">
-                        <option value="8-9">8AM-9AM</option>
-                        <option value="9-10">9AM-10AM</option>
-                        <option value="10-11">10AM-11AM</option>
-                        <option value="11-12">11AM-12PM</option>
-                        <option value="12-1">12PM-1PM</option>
-                        <option value="1-2">1PM-2PM</option>
-                        <option value="2-3">2PM-3PM</option>
-                        <option value="3-4">3PM-4PM</option>
-                        <option value="4-5">4PM-5PM</option>
-                    </select>
-                    <br></br>
-                    <input type="submit" value="Submit" class="btn btn-primary">
-                </form>
+        <div class="top-card-row row">
+            <!-- Bottom Row -->
+            <div class="card col-sm-6 " style="width:400px">
+                <img class="card-img-top" src="/assets/img/NewMonarchy.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">New Monarchy Conference Room </h4>
+                    <form action="/action_page.php">
+                        <p>Username</p>
+                        <input type="text" id="Username" name="Username">
+                        <p>Description</p>
+                        <input type="text" id="description" name="Description">
+                        <label for="cars">Choose an Available Slot Time:</label>
+                        <select name="cars" id="startTime">
+                            <option value="8-9">8AM-9AM</option>
+                            <option value="9-10">9AM-10AM</option>
+                            <option value="10-11">10AM-11AM</option>
+                            <option value="11-12">11AM-12PM</option>
+                            <option value="12-1">12PM-1PM</option>
+                            <option value="1-2">1PM-2PM</option>
+                            <option value="2-3">2PM-3PM</option>
+                            <option value="3-4">3PM-4PM</option>
+                            <option value="4-5">4PM-5PM</option>
+                        </select>
+                        <br></br>
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                    </form>
+                </div>
+            </div>
+            <div class="card col-sm-6" style="width:400px">
+                <img class="card-img-top" src="/assets/img/thenine.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">The Nine Conference Room</h4>
+                    <form action="/action_page.php">
+                        <p>Username</p>
+                        <input type="text" id="Username" name="Username">
+                        <p>Description</p>
+                        <input type="text" id="description" name="Description">
+                        <label for="cars">Choose an Available Slot Time:</label>
+                        <select name="cars" id="startTime">
+                            <option value="8-9">8AM-9AM</option>
+                            <option value="9-10">9AM-10AM</option>
+                            <option value="10-11">10AM-11AM</option>
+                            <option value="11-12">11AM-12PM</option>
+                            <option value="12-1">12PM-1PM</option>
+                            <option value="1-2">1PM-2PM</option>
+                            <option value="2-3">2PM-3PM</option>
+                            <option value="3-4">3PM-4PM</option>
+                            <option value="4-5">4PM-5PM</option>
+                        </select>
+                        <br></br>
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                    </form>
+                </div>
             </div>
         </div>
-
-        <div class="card col-sm-6" style="width:400px">
-            <img class="card-img-top" src="/assets/img/thenine.jpg" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title">The Nine Conference Room</h4>
-                <form action="/action_page.php">
-                    <p>Username</p>
-                    <input type="text" id="Username" name="Username">
-                    <p>Description</p>
-                    <input type="text" id="description" name="Description">
-                    <label for="cars">Choose an Available Slot Time:</label>
-                    <select name="cars" id="startTime">
-                        <option value="8-9">8AM-9AM</option>
-                        <option value="9-10">9AM-10AM</option>
-                        <option value="10-11">10AM-11AM</option>
-                        <option value="11-12">11AM-12PM</option>
-                        <option value="12-1">12PM-1PM</option>
-                        <option value="1-2">1PM-2PM</option>
-                        <option value="2-3">2PM-3PM</option>
-                        <option value="3-4">3PM-4PM</option>
-                        <option value="4-5">4PM-5PM</option>
-                    </select>
-                    <br></br>
-                    <input type="submit" value="Submit" class="btn btn-primary">
-                </form>
-            </div>
-        </div>
+        <!-- END COL 12 -------------------------------------------- -->
     </div>
 
-    <br></br>
 
-    <!-- Footer -->
+    <!-- FOOTER ==================================================== -->
     <footer>
         <div class="footer-top">
             <div class="container">
@@ -174,7 +180,7 @@
                         <p>
                             The purpose of Crickets is to provide private internal
                             communication for companies and organizations. The app features the ablility
-                            to share updates for all registered users on the homepage.
+                            to share updates for all registered users on the homepage and reserve conference rooms.
                         </p>
                     </div>
                     <div class="col-md-4 col-lg-4 offset-lg-1 footer-contact wow fadeInDown">
@@ -183,22 +189,19 @@
                         <div id="news-title"></div>
                         <div id="news-url"></div>
                     </div>
-                    <div class="col-md-4 col-lg-3 footer-social wow fadeInUp">
-                        <h3>Follow us</h3>
-                        <p>
-                        <h6>Natalia</h6>
-                        <a href="https://github.com/nabi-0">
-                            <img src="/assets/img/git.png" alt="git" style="width:90%;height:auto;">
-                        </a>
-                        <h6>Reggie</h6>
-                        <a href="https://github.com/Hitsupod">
-                            <img src="/assets/img/git.png" alt="git" style="width:90%;height:auto;">
-                        </a>
-                        <h6>Eduardo</h6>
-                        <a href="https://github.com/eguillen2305">
-                            <img src="/assets/img/git.png" alt="git" style="width:90%;height:auto;">
-                        </a>
+                    <div class="col-md-4 col-lg-3 footer-social wow fadeInUp"></div>
 
+                    <div class="col-md-4 col-lg-3 footer-social wow fadeInUp">
+                        <h3>Follow Us On Github</h3>
+                        <a href="https://github.com/nabi-0" class="button social github">
+                            <i class="fa fa-github" aria-hidden="true"></i> Natalia
+                        </a>
+                        <a href="https://github.com/Hitsupod" class="button social github">
+                            <i class="fa fa-github" aria-hidden="true"></i> Reggie
+                        </a>
+                        <a href="https://github.com/eguillen2305" class="button social github">
+                            <i class="fa fa-github" aria-hidden="true"></i> Eduardo
+                        </a>
                         </p>
                     </div>
                 </div>
@@ -208,13 +211,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 footer-copyright">
-                        <p>Cricket All Rights Reserved 2020 ® </p>
+                        <p>Crickets All Rights Reserved 2020® </p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
+    <!-- END OF FOOTER============================================================= -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/members.js"></script>
@@ -230,4 +233,3 @@
 
 
 </html>
-
