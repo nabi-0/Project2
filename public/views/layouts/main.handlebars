@@ -170,51 +170,74 @@
                     </div>
                 </div>
             </div>
+
+            {{!-- Sidebar --}}
             <div class="sidebar">
-                <a class="active" href="#home">Home</a>
                 <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+                {{!-- <form class="new-search" action="">
+                    <input class="input" type="text">
+                    <br>
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                </form> --}}
+                <div class="container">
+                    <ul class="list" id="news-view"></ul>
+                </div>
             </div>
         </div>
 
 
-        <!-- FOOTER --------------- -->
-        <footer class="responsive-blog-footer">
+  <!-- FOOTER --------------- -->
+<footer class="responsive-blog-footer">
+    <div class="row">
+        <div class="small-5 large-10 columns">
             <div class="row">
-                <div class="large-12 columns">
+                <div class="medium columns about-section">
                     <h4> About The App</h4>
-                    <p>The purpose of Crickets is to provide private internal
+                    <p>The purpose of "APPLICATION NAME" is to provide private internal
                         communication for companies and organizations. The app features the ablility
                         to share updates for all registered users on the homepage thread.
-
                         In addition to being able to communicate , employees are also able to reserve
                         conference rooms and see what times are available. HR will also be able to leave
                         employee reviews in our reviews site.
                     </p>
-
-                </div>
-                <div class="rounded-social-buttons">
-                    <h6>Natalia</h6>
-                    <a class="social-button github" href="https://github.com/nabi-0"></a>
-                    <a class="social-button linkedin" href="https://www.linkedin.com/in/natalia-arias-95a5761b0/"></a>
-                </div>
-                <div class="rounded-social-buttons">
-                    <h6>Reggie</h6>
-                    <a class="social-button github" href="https://github.com/Hitsupod"></a>
-                    <a class="social-button linkedin"
-                        href="https://www.linkedin.com/in/reginald-littleton-b9803185/"></a>
-                    <h6>Eduardo</h6>
-                    <a class="social-button github" href="https://github.com/eguillen2305"></a>
-                    <a class="social-button linkedin" href="https://www.linkedin.com/in/eguillen2305/"></a>
                 </div>
             </div>
-        </footer>
+            <div>
+                <h4> Follow Us!</h4>
+                <h5>Natalia</h5>
+                <div class="rounded-social-buttons">
+                    <a class="social-button github" href="https://github.com/nabi-0">Github</a>
+                    <a class="social-button linkedin"
+                        href="https://www.linkedin.com/in/natalia-arias-95a5761b0/">Linkedin</a>
+                </div>
+                <h5>Reggie</h5>
+                <div class="rounded-social-buttons">
+                    <a class="social-button github" href="https://github.com/Hitsupod">Github</a>
+                    <a class="social-button linkedin"
+                        href="https://www.linkedin.com/in/reginald-littleton-b9803185/">Linkedin</a>
+                </div>
+                <h5>Eduardo</h5>
+                <div class="rounded-social-buttons">
+                    <a class="social-button github" href="https://github.com/eguillen2305">Github</a>
+                    <a class="social-button linkedin" href="https://www.linkedin.com/in/eguillen2305/">Linkedin</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row columns flex-container align-justify">
+            <p> </p>
+            <div class="up-arrow">
+                <a href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+            </div>
+        </div>
+</footer>
 
     </body>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script src="/public/js/newsapi.js"></script> 
     <script>
         $(document).foundation();
     </script>
