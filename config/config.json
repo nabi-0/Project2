@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "*password",
-    "database": "employees_db",
+    "password": "*savetheocean*13npa",
+    "database": "associates_db",
     "host": "127.0.0.1",
     "port": 3306,
     "dialect": "mysql"

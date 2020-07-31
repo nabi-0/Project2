@@ -30,7 +30,7 @@ $(document).ready(function () {
     })
       .then(function () {
         window.location.replace("/reservations");
-        console.log("am I getting to this point?")
+        console.log("am I getting to this point?");
         // If there's an error, log the error
       })
       .catch(function (err) {
