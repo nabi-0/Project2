@@ -4,6 +4,7 @@ $(function () {
     event.preventDefault();
     event.stopPropagation();
     console.log("post val= ", $("#post").val().trim());
+    console.log("username val=", $("#username").val().trim());
 
     var newPost = {
       username: $("#username").val().trim(),
@@ -26,6 +27,7 @@ $(function () {
     $.post("/post", {
       // method: "POST",
       data: newPost,
+      dataType: "json",
     }).then(function () {
       console.log("created new post");
       // Reload the page to get the updated list
