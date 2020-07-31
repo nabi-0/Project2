@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
         <!-- Foundation style asset for icons -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     </head>
 
     <body>
@@ -62,8 +62,8 @@
         </div>
 
         <br>
-        <div class="row" id="content">
-            <div class="medium-8 columns">
+        <div class="row" style="max-width:100%;" id="content">
+            <div class="medium-6 columns medium-offset-3">
                 <!-- <div class="newsletter-subscribe-inner">
                     <p class="subheader">Share company news</p>
 
@@ -75,15 +75,14 @@
                         </div>
                 </div>
                 </form> -->
+                <br>
                 <div class="row" id="content">
                     <div class="medium-12 columns">
                         <div class="blog-post">
-                            <!-- START OF FORM REQUIRED FOR BOTH APIS============================= -->
-                            <form id="shareForm">
-                                <h3> Share an update</h3>
-                                <p>To share an update please provide your name, username and limit text to 180
-                                    characters.
-                                </p>
+                            <h3> Share an update</h3>
+                            <p>To share an update please provide your name, username and limit text to 180
+                                characters.
+                            </p>
                         </div>
                         <div class="row">
 
@@ -169,60 +168,52 @@
                     </div>
                 </div>
             </div>
-            <div class="medium-3 columns" data-sticky-container>
-                <div class="sticky" data-sticky data-anchor="content">
-                    <h4>Categories</h4>
-                    <ul>
-                        <li><a href="#">Skyler</a></li>
-                        <li><a href="#">Jesse</a></li>
-                        <li><a href="#">Mike</a></li>
-                        <li><a href="#">Holly</a></li>
-                    </ul>
-
-                    <h4>Authors</h4>
-                    <ul>
-                        <li><a href="#">Skyler</a></li>
-                        <li><a href="#">Jesse</a></li>
-                        <li><a href="#">Mike</a></li>
-                        <li><a href="#">Holly</a></li>
-                    </ul>
-                </div>
-            </div>
+            
         </div>
 
 
-        <!-- FOOTER --------------- -->
-        <footer class="responsive-blog-footer">
-            <div class="row">
-                <div class="large-12 columns">
-                    <h4> About The App</h4>
-                    <p>The purpose of Crickets is to provide private internal
-                        communication for companies and organizations. The app features the ablility
-                        to share updates for all registered users on the homepage thread.
-
-                        In addition to being able to communicate , employees are also able to reserve
-                        conference rooms and see what times are available. HR will also be able to leave
-                        employee reviews in our reviews site.
-                    </p>
-
+        <!-- FOOTER ==================================================== -->
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 footer-about wow fadeInUp">
+                            <img class="logo-footer" src="/assets/img/cricketsicon.png" alt="logo-footer">
+                            <p>
+                                The purpose of Crickets is to provide private internal
+                                communication for companies and organizations. The app features the ablility
+                                to share updates for all registered users on the homepage and reserve conference rooms.
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-lg-4 offset-lg-1 footer-contact wow fadeInDown">
+                        </div>
+                        <div class="col-md-4 col-lg-3 footer-social wow fadeInUp">
+                            <h3>Follow Us On Github</h3>
+                            <a href="https://github.com/nabi-0" class="button social github">
+                                <i class="fa fa-github" aria-hidden="true"></i> Natalia
+                            </a>
+                            <a href="https://github.com/Hitsupod" class="button social github">
+                                <i class="fa fa-github" aria-hidden="true"></i> Reggie
+                            </a>
+                            <a href="https://github.com/eguillen2305" class="button social github">
+                                <i class="fa fa-github" aria-hidden="true"></i> Eduardo
+                            </a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="rounded-social-buttons">
-                    <h6>Natalia</h6>
-                    <a class="social-button github" href="https://github.com/nabi-0"></a>
-                    <a class="social-button linkedin" href="https://www.linkedin.com/in/natalia-arias-95a5761b0/"></a>
-                </div>
-                <div class="rounded-social-buttons">
-                    <h6>Reggie</h6>
-                    <a class="social-button github" href="https://github.com/Hitsupod"></a>
-                    <a class="social-button linkedin"
-                        href="https://www.linkedin.com/in/reginald-littleton-b9803185/"></a>
-                    <h6>Eduardo</h6>
-                    <a class="social-button github" href="https://github.com/eguillen2305"></a>
-                    <a class="social-button linkedin" href="https://www.linkedin.com/in/eguillen2305/"></a>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 footer-copyright">
+                            <p>Crickets All Rights Reserved 2020® </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
-
+        <!-- END OF FOOTER============================================================= -->
     </body>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
