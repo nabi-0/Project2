@@ -1,6 +1,7 @@
 // const searchForm = document.querySelector(".new-search")
 // const input = document.querySelector(".input")
-const spaceNews = document.querySelector(".news-view");
+const spaceNewsID = document.querySelector("news-id");
+const spaceNewstitle = document.querySelector("news-title");
 
 
 // searchForm.addEventListener("submit", displayNews);
@@ -19,12 +20,12 @@ window.onload = function displayNews() {
     }
 
     $.ajax(settings).done(function (response) {
-        return response.json();
+        // return response.json();
         console.log(response);
         id = response.id;
         title = response.title;
         url = response.url;
-        spaceNews.append(id);
+        spaceNewsID.append(id);
     });
 };
 
