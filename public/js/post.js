@@ -1,5 +1,5 @@
 $(function () {
-  $("#post-form").on("submit", function (event) {
+  $(".post-form").on("submit", function (event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
@@ -9,12 +9,16 @@ $(function () {
       post: $("#post").val().trim(),
     };
 
+    // $("#username").val("");
+    // $("#title").val("");
+    // $("#post").val("");
+
     //if statement then call ajax post method...
     if (!newPost.username.length) {
       console.log("returning because username not entered");
       return;
     }
-    console.log("Do I work?");
+    //console.log("Do I work?");
 
     // Send the POST request.
     $.ajax("/post", {
@@ -27,14 +31,14 @@ $(function () {
     });
   });
 
-  // $(".delete-burger").on("click", function (event) {
+  // $(".delete-post").on("click", function (event) {
   //   var id = $(this).data("id");
 
   //   // Send the DELETE request.
-  //   $.ajax("/api/burgers/" + id, {
+  //   $.ajax("/post/" + id, {
   //     type: "DELETE",
   //   }).then(function () {
-  //     console.log("deleted burger", id);
+  //     console.log("deleted post", id);
   //     // Reload the page to get the updated list
   //     location.reload();
   //   });

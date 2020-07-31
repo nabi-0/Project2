@@ -3,15 +3,16 @@ var db = require("../models");
 module.exports = function (app) {
   // Create all our routes and set up logic within those routes where required.
   app.get("/post", function (req, res) {
-    console.log("handleing get request for url /post");
+    console.log("handling get request for url /post");
     // findAll returns all entries for a table when used with no options
     db.Post.findAll({}).then(function (dbPost) {
+      console.log({ dbPost });
       res.render("post", dbPost);
     });
   });
 
   app.post("/post", function (req, res) {
-    console.log("handleing post request for url /post");
+    console.log("handling post request for url /post");
     db.Post.create({
       username: req.body.username,
       title: req.body.title,
