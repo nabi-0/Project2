@@ -114,8 +114,8 @@
 </div>
 
 {{#each userpost}}
-<h3>{{title}}<small>{{createdAt}}</small></h3>
-<p>{{post}}</p>
+<h3>{{this.title}}<small>{{this.createdAt}}</small></h3>
+<p>{{this.post}}</p>
 {{/each}}
 
 <div class=“callout”>
