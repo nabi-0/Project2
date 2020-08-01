@@ -2,12 +2,8 @@
 
 ## Description
 
-In this project we will be creating an internal company profile communcation system. The key features of this website include :
-Being able to reserve a conference room in real time and see attendees.
-Post public posts for the whole company to see. ("ie Team updates, birthdays")
-Employee Reviews , Employee skillset finder
+In this project we created an internal company profile communcation system. The key features of this website include : Ability to sign up as a user, login data, reserve a conference room, and post crickets on the mainpage. 
 
-Bonus feature - Kudos
 
 [![Javascript](https://img.shields.io/badge/Javascript-JS-blue.svg)](https://www.w3schools.com/Js/)
 [![Node.js](https://img.shields.io/badge/Node.js-Node-green.svg)](https://nodejs.org/en/)
@@ -20,18 +16,23 @@ Eduardo = Frontend - HTML, CSS, PUBLIC FOLDER, Handlebars.
 
 ## Summary
 
-Full stack. Uses node,inquirer, and MySQL
-https://eatdaburger2305.herokuapp.com/
+Full Stack Application combining Back-end SQL to Front-End
+
+Github
+https://github.com/nabi-0/Project2
+
+Heroku Deployment
+https://pea-two-roku.herokuapp.com/
+
 
 ## User Story
 
 ```sh
 
-AS A developer
-
-I WANT a walk-through of the codebase
-
-SO THAT I can use it as a starting point for a new project
+AS A Employee, 
+I WANT to POST Private Internal Messages to my company,
+AND RESERVE Conference rooms,
+I NEED the APP to be PRIVATE,
 
 ```
 
@@ -59,10 +60,10 @@ Access the site by typing localhost path in your chrome browser
 
 ## Authors (Github Username)
 
-nabi-0
-Hitsupod
-eguillen2035
-Hitsupod
+# nabi-0
+# Hitsupod
+# eguillen2035
+
 
 ## License
 
