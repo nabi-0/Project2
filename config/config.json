@@ -4,23 +4,20 @@
     "password": "*savetheocean*13npa",
     "database": "associates_db",
     "host": "127.0.0.1",
-    "port": 3306,
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "port": 3306,
+    "username": "fokjssg0ae36kltf",
+    "password": "nn3h95xkfc2sunp2",
+    "database": "lih2ug39rtca8320",
+    "host": "e11wl4mksauxgu1w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "port": 3306,
+    "username": "fokjssg0ae36kltf",
+    "password": "nn3h95xkfc2sunp2",
+    "database": "lih2ug39rtca8320",
+    "host": "e11wl4mksauxgu1w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
