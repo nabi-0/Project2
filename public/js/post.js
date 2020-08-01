@@ -22,7 +22,6 @@ $(function () {
       data: newPost,
       dataType: "json",
     }).then(function () {
-      console.log("created new post");
       // Reload the page to get the updated list
       location.reload();
     });

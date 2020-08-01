@@ -39,6 +39,8 @@ require("./routes/api-routes.js")(app);
 console.log("after api routes");
 require("./routes/post-routes.js")(app);
 console.log("after post routes");
+require("./routes/reservations-routes.js")(app);
+console.log("after reservations routes");
 console.log("after all the routes");
 
 // Syncing our database and logging a message to the user upon success

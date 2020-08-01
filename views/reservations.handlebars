@@ -1,0 +1,209 @@
+<!-- Start Top Bar -->
+<div class="top-bar">
+    <div class="top-bar-left">
+        <ul class="menu">
+            <li class="menu-text"> Reserve A Conference Room <span class="member-name"></span></li>
+        </ul>
+    </div>
+    <div class="top-bar-right">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="/post">Post</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </div>
+</div>
+<!-- End Top Navbar ================================= -->
+<div class="hero-section">
+    <div class="hero-section-text">
+    </div>
+</div>
+<br>
+<br>
+<!-- RESERVE A CONFERENCE ROOM ================= -->
+<div class="col-md-12">
+    <h1>Reserve a Conference Room</h1>
+</div>
+<!-- TOP CARD ROW - FIRST TWO CONFERENCE ROOMS ============================== -->
+<div class="col-lg-12">
+    <div class="top-card-row row">
+
+        <!-- Top Row ------------------------------------------->
+        <div class="card col-lg-6 " style="width:400px">
+            <img class="card-img-top" src="/assets/img/fwc.jpg" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">FWC Conference Room </h4>
+
+                <form class="reservation-form" method="post">
+                    <p>Username</p>
+                    <input type="text" id="username" name="username">
+                    <p>Description</p>
+                    <input type="text" id="description" name="description">
+                    <label for="time">Choose an Available Slot Time:</label>
+                    <select name="time" id="time">
+                        <option value="8-9">8AM-9AM</option>
+                        <option value="9-10">9AM-10AM</option>
+                        <option value="10-11">10AM-11AM</option>
+                        <option value="11-12">11AM-12PM</option>
+                        <option value="12-1">12PM-1PM</option>
+                        <option value="1-2">1PM-2PM</option>
+                        <option value="2-3">2PM-3PM</option>
+                        <option value="3-4">3PM-4PM</option>
+                        <option value="4-5">4PM-5PM</option>
+                    </select>
+                    <br></br>
+                    <button class="button" id="subres-btn">Submit Reservation</button>
+                </form>
+            </div>
+            <h3> Reservations </h3>
+            {{#each userreservations}}
+            <div class="card">
+                <div class="container">
+                    <h2>{{this.username}}</h2>
+                    <h4>{{this.description}}</h4>
+                    <h3>
+                        <p>{{this.time}}</p>
+                    </h3>
+                    <button style="float: right;" class="button small alert delete-reservation"
+                        data-id="{{this.id}}">DELETE</button>
+                </div>
+            </div>
+            <br />
+            {{/each}}
+        </div>
+        <div class="card col-sm-6" style="width:400px">
+            <img class="card-img-top" src="/assets/img/DeadOrbit.jpg" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Dead Orbit Conference Room</h4>
+                <form>
+                    <p>Username</p>
+                    <input type="text" id="Username" name="Username">
+                    <p>Description</p>
+                    <input type="text" id="description" name="Description">
+                    <label for="cars">Choose an Available Slot Time:</label>
+                    <select name="cars" id="time">
+                        <option value="8-9">8AM-9AM</option>
+                        <option value="9-10">9AM-10AM</option>
+                        <option value="10-11">10AM-11AM</option>
+                        <option value="11-12">11AM-12PM</option>
+                        <option value="12-1">12PM-1PM</option>
+                        <option value="1-2">1PM-2PM</option>
+                        <option value="2-3">2PM-3PM</option>
+                        <option value="3-4">3PM-4PM</option>
+                        <option value="4-5">4PM-5PM</option>
+                    </select>
+                    <br></br>
+                    <button class="button" id="sub-btn">Submit Reservation</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Row -->
+    <div class="top-card-row row">
+        <!-- Bottom Row -->
+        <div class="card col-sm-6 " style="width:400px">
+            <img class="card-img-top" src="/assets/img/NewMonarchy.jpg" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">New Monarchy Conference Room </h4>
+                <form>
+                    <p>Username</p>
+                    <input type="text" id="Username" name="Username">
+                    <p>Description</p>
+                    <input type="text" id="description" name="Description">
+                    <label for="cars">Choose an Available Slot Time:</label>
+                    <select name="cars" id="startTime">
+                        <option value="8-9">8AM-9AM</option>
+                        <option value="9-10">9AM-10AM</option>
+                        <option value="10-11">10AM-11AM</option>
+                        <option value="11-12">11AM-12PM</option>
+                        <option value="12-1">12PM-1PM</option>
+                        <option value="1-2">1PM-2PM</option>
+                        <option value="2-3">2PM-3PM</option>
+                        <option value="3-4">3PM-4PM</option>
+                        <option value="4-5">4PM-5PM</option>
+                    </select>
+                    <br></br>
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+        <div class="card col-sm-6" style="width:400px">
+            <img class="card-img-top" src="/assets/img/thenine.jpg" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">The Nine Conference Room</h4>
+                <form>
+                    <p>Username</p>
+                    <input type="text" id="Username" name="Username">
+                    <p>Description</p>
+                    <input type="text" id="description" name="Description">
+                    <label for="cars">Choose an Available Slot Time:</label>
+                    <select name="cars" id="startTime">
+                        <option value="8-9">8AM-9AM</option>
+                        <option value="9-10">9AM-10AM</option>
+                        <option value="10-11">10AM-11AM</option>
+                        <option value="11-12">11AM-12PM</option>
+                        <option value="12-1">12PM-1PM</option>
+                        <option value="1-2">1PM-2PM</option>
+                        <option value="2-3">2PM-3PM</option>
+                        <option value="3-4">3PM-4PM</option>
+                        <option value="4-5">4PM-5PM</option>
+                    </select>
+                    <br></br>
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END COL 12 =========================================== -->
+</div>
+
+
+<!-- FOOTER ==================================================== -->
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 footer-about wow fadeInUp">
+                    <img class="logo-footer" src="/assets/img/cricketsicon.png" alt="logo-footer">
+                    <p>
+                        The purpose of Crickets is to provide private internal
+                        communication for companies and organizations. The app features the ablility
+                        to share updates for all registered users on the homepage and reserve conference rooms.
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-4 offset-lg-1 footer-contact wow fadeInDown">
+                    <h3>Feature News</h3>
+                    <div id="news-id"></div>
+                    <div id="news-title"></div>
+                    <div id="news-url"></div>
+                </div>
+                <div class="col-md-4 col-lg-3 footer-social wow fadeInUp"></div>
+
+                <div class="col-md-4 col-lg-3 footer-social wow fadeInUp">
+                    <h3>Follow Us On Github</h3>
+                    <a href="https://github.com/nabi-0" class="button social github">
+                        <i class="fa fa-github" aria-hidden="true"></i> Natalia
+                    </a>
+                    <a href="https://github.com/Hitsupod" class="button social github">
+                        <i class="fa fa-github" aria-hidden="true"></i> Reggie
+                    </a>
+                    <a href="https://github.com/eguillen2305" class="button social github">
+                        <i class="fa fa-github" aria-hidden="true"></i> Eduardo
+                    </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer-copyright">
+                    <p>Crickets All Rights Reserved 2020® </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
