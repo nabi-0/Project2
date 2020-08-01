@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- {{!-- Source to style.css --}} -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 </head>
 <!--START OF BODY ==================================================== -->
 
@@ -185,9 +184,15 @@
                     </div>
                     <div class="col-md-4 col-lg-4 offset-lg-1 footer-contact wow fadeInDown">
                         <h3>Feature News</h3>
-                        <div id="news-id"></div>
-                        <div id="news-title"></div>
-                        <div id="news-url"></div>
+                        <div v-for="story in stories" :key="news.id">
+                            <h2>{{ news.data.title }}</h2>
+                            <p>Type: {{ news.data.type }}</p>
+                            <p>Link: {{ news.data.url }}</p>
+                        </div>
+
+                        <div id="news-id">ID</div>
+                        <div id="news-title">Title</div>
+                        <div id="news-url">News Article</div>
                     </div>
                     <div class="col-md-4 col-lg-3 footer-social wow fadeInUp"></div>
 
@@ -220,7 +225,8 @@
     <!-- END OF FOOTER============================================================= -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/members.js"></script>
+    <script src="/public/js/newsapi.js"></script>
+
 
 </body>
 
@@ -230,6 +236,5 @@
 <script>
     $(document).foundation();
 </script>
-
 
 </html>
