@@ -8,7 +8,7 @@
     <div class="top-bar-right">
         <ul class="menu">
             <li><a href="#">Home</a></li>
-            <li><a href="/reservations.html">Reservations</a></li>
+            <li><a href="/reservations">Reservations</a></li>
             <li><a href="#">Post</a></li>
             <li><a href="/logout">Logout</a></li>
         </ul>
@@ -56,10 +56,7 @@
             <div class="medium-12 columns">
                 <div class="blog-post">
                     <!-- START OF FORM REQUIRED FOR BOTH APIS============================= -->
-                    <h3> Share an update</h3>
-                    <p>To share an update please provide your name, username and limit text to 180
-                        characters.
-                    </p>
+                    <h3> Share a Post</h3>
                 </div>
                 <div class="row">
 
@@ -76,12 +73,10 @@
                     <div class="form-group">
                         <input type="text" placeholder="Username" id="username" name="username">
                         <input type="text" placeholder="Title" id="title" name="title">
-                        <textarea placeholder="Share an Post" id="post" name="post" rows=5 cols=50></textarea>
+                        <textarea placeholder="Share a Post" id="post" name="post" rows=5 cols=50></textarea>
                     </div>
                     <!-- SUBMIT BUTTON ==================== -->
-                    <button class="button postfix submitBtn" type="buttom" id="sub-btn">Submit Post</button>
-                    <!-- DELETE BUTTON ==================== -->
-                    {{!-- <button class="delete-post" data-id="{{this.id}}">EWWW! DELETE!</button> --}}
+                    <button class="button" id="sub-btn">Submit Post</button>
                 </form>
 
                 <div class="row collapse postfix-round">
@@ -95,27 +90,22 @@
 </div>
 
 {{#each userpost}}
-<h3>{{this.title}}<small>{{this.createdAt}}</small></h3>
-<p>{{this.post}}</p>
+<div class="card">
+    <div class="container">
+        <h3>{{this.title}}</h3>-<small>{{this.createdAt}}</small>
+
+        <h4>
+            <p>"{{this.post}}"</p>
+        </h4>
+        <button style="float: right;" class="button small alert delete-post" data-id="{{this.id}}">DELETE</button>
+    </div>
+</div>
+<br />
 {{/each}}
+
 
 <div class=“callout”>
 </div>
-</div>
-
-<div class="blog-post">
-    <h3>Awesome blog post title <small>3/6/2015</small></h3>
-    <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo
-        dignissim congue.
-        Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper
-        orci.
-        Quisque eget
-        odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.
-        Nulla at
-        nulla justo,
-        eget luctus.</p>
-    <div class="callout">
-    </div>
 </div>
 
 <footer>
